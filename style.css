@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  background-color: hsl(186, 100%, 5%);
+}
+#clock-container {
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#clock {
+  font-family: monospace;
+  font-size: 8rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color: hsl(186, 8%, 65%);
+}
+#date {
+  margin-left: 50%;
+  font-family: monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(18, 80%, 44%);
+}
+.navbar ul {
+  list-style-type: none;
+  background-color: hsl(192, 81%, 14%);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.navbar a {
+  text-decoration: none;
+  color: hsl(18, 80%, 44%);
+  font-size: 3rem;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+.navbar a:hover {
+  background-color: hsl(192, 81%, 5%);
+}
+.navbar li {
+  float: left;
+  margin: 0.5rem;
+}

@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  background-color: hsl(186, 100%, 5%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 5rem;
+  background-color: hsl(186, 100%, 8%);
+}
+#display {
+  font-size: 8rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: hsl(47, 100%, 55%);
+  margin-bottom: 2rem;
+}
+#controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 2px;
+  min-width: 125px;
+  border: none;
+  border-radius: 0.5rem;
+  color: hsl(18, 80%, 44%);
+  cursor: pointer;
+  background-color: hsl(192, 81%, 14%);
+}
+dialog {
+  background-color: hsl(192, 81%, 25%);
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+input {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 4rem;
+}
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  color: hsl(18, 80%, 44%);
+  width: 63%;
+}
+.navbar ul {
+  list-style-type: none;
+  background-color: hsl(192, 81%, 14%);
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.navbar a {
+  text-decoration: none;
+  color: hsl(18, 80%, 44%);
+  font-size: 3rem;
+  padding: 5px;
+  display: block;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+.navbar a:hover {
+  background-color: hsl(192, 81%, 5%);
+}
+.navbar li {
+  float: left;
+  margin: 0.5rem;
+}

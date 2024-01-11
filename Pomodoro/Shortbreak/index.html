@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time to Focus</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="../../index.html">Clock</a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>
+        "Thy right is to work only, but never to its fruits; let the fruit of
+        action be not thy motive, nor let thy attachment be to inaction. -The
+        Bhagavad Gita"
+      </h1>
+      <div id="container">
+        <div id="display">60:00</div>
+        <div id="controls">
+          <button id="startBtn" onclick="start()">Start</button>
+          <button id="stopBtn" onclick="stop()">Stop</button>
+          <button id="resetBtn" onclick="reset()">Reset</button>
+          <button data-open-modal>Setting</button>
+          <dialog data-modal id="timeDialog">
+            <div id="modal-container">
+              <label>Pomodoro</label>
+              <input type="number" id="#timeSet" value="0" min="1" />
+              <button data-close-modal onclick="updateTime()">Save</button>
+            </div>
+          </dialog>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
