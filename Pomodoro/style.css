@@ -116,10 +116,10 @@ input {
   display: none;
 }
 nav {
-  z-index: 999;
+  position: relative;
 }
 nav ul {
-  margin: 0;
+  margin: 0.5rem 0;
   padding: 0;
   width: 100%;
   list-style: none;
@@ -132,7 +132,8 @@ nav a {
   padding: 5px 30px;
   text-decoration: none;
   color: hsl(18, 80%, 44%);
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
@@ -142,4 +143,5 @@ nav a:hover {
 }
 nav li:first-child {
   margin-right: auto;
+  margin-left: 4rem;
 }
