@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  background-color: hsl(186, 100%, 3%);
+
+  &::before {
+    content: "";
+    background-image: url(../img/domeViolin.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.3;
+  }
+}
+.videoBackground {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+@media (min-aspect-ratio: 16/9) {
+  .videoBackground {
+    width: 100%;
+    height: auto;
+  }
+}
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  margin-top: 4%;
+  text-align: center;
+  font-size: 2rem;
+  font-style: italic;
+  color: hsl(18, 80%, 44%);
+  width: 63%;
+}
+#containerDisplay {
+  font-size: 8rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: hsl(47, 100%, 55%);
+}
+#display {
+  margin: 11rem 0 0 0;
+  font-size: 8rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: hsl(47, 100%, 55%);
+}
+.container {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: hsl(186, 100%, 7%);
+}
+.tabBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tabBtn {
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: hsl(18, 80%, 44%);
+  padding: 0.25rem 1.5rem 0.25rem 1.5rem;
+  background-color: hsl(186, 100%, 8%);
+  border: none;
+  border-radius: 0.25rem;
+}
+.active {
+  background-color: hsl(186, 100%, 6%);
+}
+#startBtn {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  margin-bottom: 1rem;
+  min-width: 125px;
+  border: none;
+  border-radius: 0.5rem;
+  color: hsl(18, 80%, 44%);
+  cursor: pointer;
+  background-color: hsl(192, 81%, 12%);
+}
+#stopBtn {
+  font-size: 3rem;
+  font-weight: bold;
+  min-width: 125px;
+  border: none;
+  color: hsl(18, 80%, 44%);
+  cursor: pointer;
+  background-color: transparent;
+}
+dialog {
+  background-color: hsl(192, 81%, 25%);
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+input {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 4rem;
+}
+.hidden {
+  display: none;
+}
+nav {
+  z-index: 999;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  padding: 5px 30px;
+  text-decoration: none;
+  color: hsl(18, 80%, 44%);
+  font-size: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+nav a:hover {
+  background-color: hsl(192, 81%, 5%);
+}
+nav li:first-child {
+  margin-right: auto;
+}

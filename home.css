@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background-color: hsl(186, 100%, 5%);
+}
+#clock-container {
+  margin-top: 17%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#clock {
+  font-family: monospace;
+  font-size: 8rem;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  color: hsl(186, 8%, 65%);
+}
+#date {
+  margin-left: 50%;
+  font-family: monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(18, 80%, 44%);
+}
