@@ -1,6 +1,17 @@
 body {
   margin: 0;
   background-color: hsl(186, 100%, 5%);
+  &::before {
+    content: "";
+    background-image: url(img/clockViolin.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+ 
 }
 #clock-container {
   margin-top: 17%;
@@ -15,12 +26,12 @@ body {
   font-weight: bold;
   text-align: center;
   width: 100%;
-  color: hsl(186, 8%, 65%);
+  color: hsl(186, 8%, 85%);
 }
 #date {
   margin-left: 50%;
   font-family: monospace;
   font-size: 2.5rem;
   font-weight: bold;
-  color: hsl(18, 80%, 44%);
+  color: hsl(18, 80%, 50%);
 }

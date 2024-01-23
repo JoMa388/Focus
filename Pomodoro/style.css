@@ -102,46 +102,43 @@ h1 {
   background-color: transparent;
 }
 dialog {
-  background-color: hsl(192, 81%, 25%);
-  font-size: 2rem;
-  font-weight: bold;
-  border-radius: 0.5rem;
-}
-input {
-  font-size: 2rem;
-  font-weight: bold;
-  width: 4rem;
-}
-.hidden {
-  display: none;
-}
-nav {
-  position: relative;
-}
-nav ul {
-  margin: 0.5rem 0;
+  width: 25rem;
+  height: 80%;
   padding: 0;
-  width: 100%;
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  background-color: hsl(186, 100%, 5%);
+  font-family: monospace;
+  border-radius: 0.5rem;
+  border: none;
+  color: hsl(18, 80%, 44%);
+}
+.modalHeading {
+  font-size: 1.25rem;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+.timeHeading {
+  font-size: 1.2rem;
+  padding: 1rem 0 0.5rem 1rem;
 }
 
-nav a {
-  padding: 5px 30px;
-  text-decoration: none;
-  color: hsl(18, 80%, 44%);
-  font-size: 1.5rem;
-  font-weight: bold;
+.modalInput {
+  display: block;
+  width: 5rem;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
   border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background-color: hsl(186, 8%, 65%);
+  font-size: 1rem;
 }
-nav a:hover {
-  background-color: hsl(192, 81%, 5%);
+.timerLabel {
+  display: inline-block;
+  font-size: 1rem;
+  padding-left: 1rem;
 }
-nav li:first-child {
-  margin-right: auto;
-  margin-left: 4rem;
+
+.hidden {
+  display: none;
 }

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
+  </head>
+  <body>
+    <nav></nav>
+    <main>
+      <form class="weatherForm">
+        <input type="text" class="cityInput" placeholder="Enter City" />
+        <button type="submit">Get Weather</button>
+        <div class="card">
+          <h1 class="cityDisplay">New York</h1>
+          <p class="tempDisplay">90°F</p>
+          <p class="humidityDisplay">Humidity: 75%</p>
+          <p class="descDisplay">clear skies</p>
+          <p class="weatherEmoji">☀️</p>
+          <p class="errorDisplay">Please enter a city</p>
+        </div>
+      </form>
+    </main>
+    <script src="../navBar/navBar.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

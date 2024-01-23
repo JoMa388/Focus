@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="title">Time to Focus!</title>
+    <title id="Pomodoro">Time to Focus!</title>
     <link rel="shortcut icon" href="#" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -12,15 +12,7 @@
       <source src="../img/Video/domeViolin.mp4" type="video/mp4" />
     </video>
     <audio loop src="../img/Mp3/moonlightSonata.mp3" id="audioBg"></audio>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="">Weather</a></li>
-        <li><a href="">Calendar</a></li>
-        <li><a href="">Calculator</a></li>
-        <li id="settingNav"><a href="">Setting</a></li>
-      </ul>
-    </nav>
+    <nav></nav>
     <main>
       <h1>
         "Thy right is to work only, but never to its fruits; let the fruit of
@@ -30,23 +22,48 @@
       <h2 id="display" class="hidden">30:00</h2>
       <button id="stopBtn" class="hidden" onclick="stop()">Stop</button>
       <div class="container">
-        <div class="tabBox">
+        <div class="tabBox" id="tabBox">
           <button class="tabBtn active" value="timeSet">Pomodoro</button>
           <button class="tabBtn" value="shorttimeSet">Short Break</button>
           <button class="tabBtn" value="longtimeSet">Long Break</button>
         </div>
         <div id="containerDisplay">30:00</div>
         <button id="startBtn" onclick="start()">Start</button>
-        <button class="hidden" data-open-modal>Setting</button>
         <dialog data-modal id="timeDialog">
+          <div class="modalHeading">Settings</div>
           <div id="modal-container">
-            <label for="timeSet">Pomodoro</label>
-            <input type="number" id="timeSet" value="30" min="1" />
-            <label for="shorttimeSet">Short Break</label>
-            <input type="number" id="shorttimeSet" value="5" min="1" />
-            <label for="longtimeSet">Long Break</label>
-            <input type="number" id="longtimeSet" value="30" min="1" />
-            <button data-close-modal onclick="updateTime()">Save</button>
+            <div class="timeHeading">Time(Minutes)</div>
+            <div class="timerLabel">
+              <label for="timeSet">Pomodoro</label>
+              <input
+                type="number"
+                id="timeSet"
+                class="modalInput"
+                value="30"
+                min="1"
+              />
+            </div>
+            <div class="timerLabel">
+              <label for="shorttimeSet">Short Break</label>
+              <input
+                type="number"
+                id="shorttimeSet"
+                class="modalInput"
+                value="5"
+                min="1"
+              />
+            </div>
+            <div class="timerLabel">
+              <label for="longtimeSet">Long Break</label>
+              <input
+                type="number"
+                id="longtimeSet"
+                class="modalInput"
+                value="30"
+                min="1"
+              />
+            </div>
+            <button data-close-modal onclick="updateDisplay()">Save</button>
           </div>
         </dialog>
       </div>

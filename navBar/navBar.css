@@ -1,6 +1,6 @@
 nav ul {
-  background-color: hsl(192, 81%, 14%);
-  margin: 0;
+  position: relative;
+  margin: 0.5rem 0;
   padding: 0;
   width: 100%;
   list-style: none;
@@ -13,16 +13,19 @@ nav a {
   padding: 5px 30px;
   text-decoration: none;
   color: hsl(18, 80%, 44%);
-  font-size: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
 }
+
 nav a:hover {
   background-color: hsl(192, 81%, 5%);
 }
 nav li:first-child {
   margin-right: auto;
+  margin-left: 4rem;
 }
 .sidebar {
   background-color: hsl(192, 81%, 14%, 0.2);
