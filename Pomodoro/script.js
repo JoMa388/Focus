@@ -28,6 +28,7 @@ function update() {
   title.textContent = `${minutesString}:${secondsString} - Time to Focus! `;
   if (countDown == 0) {
     setTimeout(reset, 1000);
+    audioControl();
   }
 }
 
@@ -43,26 +44,30 @@ function reset() {
   clearInterval(timeInterval);
   isRunning = false;
   videoControl();
-  audioControl();
   display.textContent = `${timer / 60}:00`;
   countdownTimer = timer;
   title.textContent = `${timer / 60}:00 - Time to Focus!`;
   containerDisplay.textContent = `${timer / 60}:00`;
 }
 function videoControl() {
+  const quote = document.querySelector("#quote");
   const video = document.querySelector("#videoBg");
   isRunning
-    ? (video.play(), video.classList.remove("hidden"))
-    : (video.pause(), video.classList.add("hidden"));
-  audioControl();
+    ? (video.play(),
+      video.classList.remove("hidden"),
+      quote.classList.add("hidden"))
+    : (video.pause(),
+      video.classList.add("hidden"),
+      quote.classList.remove("hidden"));
   hideContainer();
 }
 function audioControl() {
   const audio = document.querySelector("#audioBg");
-  audio.volume = 0.1;
-  isRunning
-    ? (audio.play(), audio.classList.remove("hidden"))
-    : (audio.pause(), audio.classList.add("hidden"));
+  audio.volume = 0.5;
+  audio.play();
+  //isRunning
+  //   ? (audio.play(), audio.classList.remove("hidden"))
+  // : (audio.pause(), audio.classList.add("hidden"));
 }
 function hideContainer() {
   let container = document.querySelector(".container");
